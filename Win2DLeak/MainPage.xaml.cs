@@ -24,8 +24,8 @@ namespace Win2DLeak {
 
             CanvasCtrl.Draw += OnDraw;
             SizeChanged += OnSizeChanged;
-            Loaded += OnLoaded;
-            Unloaded += OnUnloaded;
+            CanvasCtrl.Loaded += OnLoaded;
+            CanvasCtrl.Unloaded += OnUnloaded;
         }
 
         private void OnLoaded(object sender, RoutedEventArgs e) {
